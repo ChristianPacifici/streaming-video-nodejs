@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NodeStream - Video Streaming</title>
+    <meta name="description" content="High-quality video streaming powered by Node.js"/>
+
+    <!-- HLS.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <!-- Our separated files -->
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>NodeStream</h1>
+    <p>High-performance video streaming powered by Node.js</p>
+</header>
+
+<div class="container">
+
+    <!-- Main Player -->
+    <div class="video-container">
+        <div class="video-title">Live Stream - Node.js HLS Streaming</div>
+        <video id="mainVideo" controls autoplay muted playsinline></video>
+    </div>
+
+    <!-- On-Demand Playlist -->
+    <h2 style="margin-bottom: 1rem; color: #00ff88;">On-Demand Videos</h2>
+    <div class="playlist">
+        <div class="video-card" onclick="playVideo('/stream/movie1.m3u8', 'Epic Action Movie Trailer')">
+            <img src="https://via.placeholder.com/400x225/333/fff?text=Action+Movie" alt="Action Movie">
+            <h3>Epic Action Movie Trailer</h3>
+        </div>
+
+        <div class="video-card" onclick="playVideo('/stream/nature.m3u8', 'Relaxing Nature 4K')">
+            <img src="https://via.placeholder.com/400x225/228B22/fff?text=Nature+4K" alt="Nature">
+            <h3>Relaxing Nature 4K</h3>
+        </div>
+
+        <div class="video-card" onclick="playVideo('/videos/sample.mp4', 'Sample MP4 Video')">
+            <img src="https://via.placeholder.com/400x225/87CEEB/000?text=Sample+Video" alt="Sample">
+            <h3>Sample MP4 Video (Progressive)</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 NodeStream - Video Streaming with Node.js + HLS</p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

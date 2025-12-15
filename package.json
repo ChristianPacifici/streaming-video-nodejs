@@ -1,0 +1,28 @@
+{
+  "name": "streaming-video-nodejs",
+  "version": "1.0.0",
+  "description": "Simple Streaming Video Site with nodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianPacifici/streaming-video-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "streaming",
+    "video"
+  ],
+  "author": "Christian Pacifici",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristianPacifici/streaming-video-nodejs/issues"
+  },
+  "homepage": "https://github.com/ChristianPacifici/streaming-video-nodejs#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}

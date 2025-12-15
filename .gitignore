@@ -1,0 +1,62 @@
+# Dependencies
+/node_modules
+/jspm_packages
+
+# Optional components (e.g., packages installed by other package managers)
+/bower_components
+
+
+/.idea
+
+# Build/Dist/Output
+/dist
+/build
+/out
+/coverage
+/temp
+/tmp
+/public/assets # If assets are generated on build
+
+# Logs and temporary data
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+/lerna-debug.log*
+.nyc_output
+.tmp
+.DS_Store # Mac OS
+Thumbs.db # Windows
+
+# Environment variables and secrets
+.env
+.env.*
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Test/Mock directories (unless you specifically need them in version control)
+/test/temp
+
+# IDE-specific directories and files
+.idea/ # WebStorm/IntelliJ
+*.iml # IntelliJ
+*.log
+*.pid
+*.seed
+*.suite
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.suite
+
+# TypeScript files
+*.tsbuildinfo
+
+# VS Code specific files to ignore (settings/launch configurations might contain secrets)
+.vscode/
+
+# Svelte/Rollup/Webpack
+/rollup.cache
+/webpack.log
